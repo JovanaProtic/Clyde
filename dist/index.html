@@ -33,83 +33,97 @@
             <li> Contact </li>
         </ul>
     </nav>
-    <!-- <aside>
-        <section>
+
+    <aside class="sticky">
+        <section id="text" class="text">
             <strong> New album </strong>
             <h1> Paint the Scene </h1>
             <strong> coming soon </strong>
         </section>
-        <section>
+        <section id="image" class="image">
             <img src="img/album-cover.png" />
         </section>
-    </aside> -->
+    </aside>
 
-    <!-- <main>
+    <main>
         <article class="photos">
             <h1> Photos </h1>
             <section class="gallery">
-                <a href="#">
-                    <img src="img/band1.jpg" />
+                <a class="img-item" href="javascript:;">
+                    <img src="img/band1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/img1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/img1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/rs2.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/rs2.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/rs1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/rs1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/ss1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/ss1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/rs3.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/rs3.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/band1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/band1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/img1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/img1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/rs2.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/rs2.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/rs1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/rs1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/ss1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/ss1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/rs3.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/rs3.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/band1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/band1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/img1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/img1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/rs2.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/rs2.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/rs1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/rs1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/ss1.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/ss1.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
-                <a href="#">
-                    <img src="img/rs3.jpg" />
-                </a>
-            </section>
-            <section class="fullscreen-img">
-                <a href="#">
-                    <img src="img/img2.jpg" />
+                <a class="img-item" href="#">
+                    <img src="img/rs3.jpg"
+                        onclick="modal.style.display = 'block'; document.getElementById('img01').src = this.src;" />
                 </a>
             </section>
         </article>
-        <article>
+        <!-- <article>
             <h1> Videos </h1>
         </article>
         <article>
@@ -123,14 +137,87 @@
         </article>
         <article>
             <h1> Contact </h1>
-        </article>
+        </article> -->
     </main>
 
-    <footer> Copyright by <strong>CodingApocalypse</strong> &copy;</footer> -->
+    <!-- The Image Modal -->
+    <aside id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </aside>
+
+    <footer> Copyright by <strong>CodingApocalypse</strong> &copy;</footer>
     <script>
         document.getElementById('music-video').addEventListener('loadedmetadata', function () {
             this.currentTime = 100;
         }, false);
+
+        // Photos section
+        const observer = new IntersectionObserver(f, {
+            threshold: [0, 1]
+        });
+
+        function f(entries) {
+            for (const entry of entries) {
+                if (entry.isIntersecting && entry.intersectionRatio >= 1) {
+                    entry.target.classList.toggle("inbound", true)
+                }
+                else {
+                    entry.target.classList.toggle("inbound", false)
+                }
+            }
+        }
+
+        const itemEls = Array.from(document.querySelectorAll(".img-item"));
+        for (const itemEl of itemEls)
+            observer.observe(itemEl)
+
+        function imgWindow() {
+            window.open("image")
+        }
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.querySelectorAll('.img-item');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            // modalImg.src = this.src;
+            modalImg.attr('src', this.src);
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Img slide on scroll
+        // var tl = new
+        //     TimelineMax({ onUpdate: updatePercentage });
+        // const controller = new scrollMagic.Controller();
+
+        // tl.from('#text', 1, { x: -200, opacity: 0 });
+        // tl.from('#image', 1, { x: 200, opacity: 0 });
+
+        // const scene = new scrollMagic.Scene({
+        //     triggerElement: '.sticky',
+        //     triggerHook: 'onLeave',
+        //     duration: '100%'
+        // });
+
+        // .setPin('.sticky')
+        //     .setTween(tl)
+        //     .addTo(controller);
+
+        // function updatePercentage() {
+        //     tl.progress();
+        // }
+
     </script>
 </body>
 
